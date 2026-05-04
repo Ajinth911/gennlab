@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* ── Design tokens ────────────────────────────────────────────────────── */
+:root {
+  --bg:           #020503;
+  --bg-2:         #050a06;
+  --green:        #4caf6e;
+  --green-bright: #5bd47b;
+  --green-dim:    #1a2e1f;
+  --white:        #ffffff;
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* ── Base ─────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--white);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Scrollbar ────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--green-dim); border-radius: 4px; }

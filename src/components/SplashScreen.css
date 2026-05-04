@@ -1,0 +1,11 @@
+/* Splash overlay */
+.splash-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #050d07;
+}
+.splash-canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
